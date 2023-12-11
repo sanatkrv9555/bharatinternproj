@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        *
+        {
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            background-color: rgb(21, 1, 46);
+        }
+        .nav1
+        {
+            
+            display: grid;
+            grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
+            border:1px solid white;
+            border-radius: 10px;
+            height:70px;
+            margin:2px 0px 4px 0px;
+            background-color: rgb(87, 9, 155,0.6);
+        }
+        .nav1 div{
+            color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            text-shadow: 1px -1px lightblue;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .nav1 div:hover{
+            padding:5px;
+            background-color: white;
+            color:black;
+            cursor: pointer;
+        }
+        .main1 .nav1
+        {
+            background-color: rgb(232, 232, 245);
+        }
+        .main .nav1 .sub1:hover
+        {
+            background-color: rgb(2, 1, 7);
+            color:white
+        }
+        .nav2
+        {
+            display: grid;
+            /* height:500px; */
+            grid-template-columns: 1.5fr 1fr;
+            /* border: 1px solid white; */
+            margin:10px 20px 10px 20px;
+            padding:10px;
+
+        }
+        .nav2 div{
+            /* border:1px solid green; */
+            margin:5px;
+            color:white;
+        }
+        .nav2 .container1 img{
+            box-shadow:2px 2px 7px 6px orange;
+            height:150px;
+            width:160px;
+            border-radius:100%;
+            margin-top:20px;
+        }
+        .imgfolder
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:10px;
+        }
+        .container1 h1{
+            text-align: center;
+            font-size:34px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding:10px;
+        }
+        .container1 h2{
+            padding-right:30px;
+            padding-left:30px;
+            text-align: center;
+            margin-top:20px;
+            font-size:28px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(15, 254, 207);
+        }
+        .container2 img
+        {
+            height:400px;
+            width:380px;
+            border-radius:10%;
+        }
+        .container2 .immg
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:10px;
+            margin:10px;
+        }
+        .copy
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top:30px;
+            font-size: 11px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .copy p{
+
+            color:rgb(249, 197, 197);
+            font-style: italic;
+        }
+        .copy i
+        {
+            margin-right:5px;
+        }
+        .nav3
+        {
+            border:1px solid white;
+        }
+        .sub_container
+        {
+            list-style: none;
+            display:grid;
+            width:600px;
+            grid-gap:20px;
+            grid-template-areas: 
+            '.item1 .item2 .item3'
+            '.item4 .item5 .item6'
+            '.item7 .item8 .item9'
+            '.item10 .item11 .item12';
+            margin-left:70px;
+        }
+        .nav3 h1
+        {
+            padding:20px 10px 20px 50px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+            text-shadow: 1px 1px 2px 2px red;
+        }
+        .sub_container li{
+            width:150px;
+            padding:10px;
+            background-color: white;
+            text-align: center;
+            border-radius:5px;
+            background-color: rgb(15, 15, 65,0.8);
+            color:white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:19px;
+            opacity: 0.8;
+            box-shadow: 2px 2px 5px 4px rgb(130, 211, 238);
+        }
+        .nav4 h1
+        {
+            padding:20px 10px 20px 50px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+            text-shadow: 1px 1px  red;
+            margin-top:30px;
+        }
+        .nav4 ul
+        {
+            margin-left: 50px;
+            color:white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .nav4 ul li
+        {
+            padding:5px;
+            margin:2px;
+            color:rgb(202, 232, 242);
+            text-shadow: 1px 1px rgb(102, 0, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .msg
+        {
+            font-size: 40px;
+            margin-top: 60px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:white;
+            box-shadow:2px 3px 5px 5px lightblue;
+            padding:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav1">
+            <div class="sub1"><h2>My Portfolio</h2></div>
+            <div class="sub2">HOME</div>
+            <div class="sub3">ABOUT</div>
+            <div class="sub4">CONTACT</div>
+            <div class="sub5">SERVICES</div>
+            <div class="sub6">LOGOUT</div>
+        </div>
+        <div class="nav2">
+            <div class="container1">
+                <div class="imgfolder">
+
+                    <img src= "C:\pracweb\zintern\2dda9667-ea3b-4c91-83de-dc62475f9c18.jpg" alt="">
+                </div>
+                <h1>
+                    Hye,Everyone
+                 </h1>
+                 <h2>
+                    My name is Sanat Kumar Verma . I am a passionate Web Developer, App Developer and Programmer.
+                </h2>
+                <div class="copy">
+                    <!-- <i class="fa-light fa-copyright"></i> -->
+                    <!-- <i class="fa-solid fa-copyright"></i> -->
+                    
+                    <p>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        2023-2024
+                    </p>
+
+                </div>
+            </div>
+            <div class="container2">
+                <div class="immg">
+                    <img src="C:\pracweb\zintern\young-man-programmer-working-computer-with-code-screen-student-programming-vector-concept_53562-4999.avif" alt="">
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="nav3">
+            <h1>
+                SKILLS
+            </h1>
+            <div class="sub_container">
+                     <li class ="item1">HTML5</li>
+                     <li class ="item2">CSS</li>
+                     <li class ="item3">Java Script</li>
+                     <li class ="item4">Mongo Db</li>
+                     <li class ="item5">BootStrap</li>
+                     <li class ="item6">API Calling</li>
+                     <li class ="item7">Git Hub</li>
+                     <li class ="item8">Node JS</li>
+                     <li class ="item9">C++</li>
+                     <li class ="item10">Java</li>
+                     <li class ="item11">Android</li>
+                     <li class ="item12">Programming</li>
+            </div>
+        </div>
+        <hr>
+        <div class="nav4">
+            <h1>ACHIEVEMENTS</h1>
+            <ul>
+                <li>
+                       Jee Advanced Qualified with All India Rank 20000
+                </li>
+                <li> Jee Main Qualified with ALL India Rank 65000</li>
+                <li> 95.20 % marks in Class 12th Board Exam</li>
+                <li> 96.00 % marks in Class 10th Board Exam</li>
+                <li> Second Rank Holder in Class 9th  </li>
+                <li> Smart India Hackathon Patricipant</li>
+            </ul>
+        </div>
+        <h2 class ="msg">THANK YOU !</h2>
+    </div>
+</body>
+</html>
